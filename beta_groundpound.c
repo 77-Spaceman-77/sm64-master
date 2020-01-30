@@ -8,7 +8,6 @@ s32 act_ground_pound(struct MarioState *m) {
 
         mario_set_forward_vel(m, 0.0f);
 
-            //play_sound(SOUND_MARIO_GROUND_POUND_WAH, m->marioObj->header.gfx.cameraToObject);
         set_mario_animation(m, MARIO_ANIM_START_GROUND_POUND);
 
         stepResult = perform_air_step(m, 0);
